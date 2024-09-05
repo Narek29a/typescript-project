@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var binary_tree_1 = require("./binary-tree");
+var binaryTree = new binary_tree_1.BinaryTree();
+binaryTree.add(4);
+binaryTree.add(7);
+binaryTree.add(2);
+binaryTree.add(9);
+binaryTree.add(8);
+binaryTree.add(5);
+binaryTree.traverse();

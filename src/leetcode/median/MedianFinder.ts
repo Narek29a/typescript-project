@@ -1,0 +1,30 @@
+export class MedianFinder {
+    private arrayOfElements: number[] = [];
+
+    constructor() {
+
+    }
+
+    addNum(num: number): void {
+        this.arrayOfElements.push(num);
+    }
+
+    findMedian(): number {
+        if (this.arrayOfElements.length % 2 === 0) {
+
+            return (this.arrayOfElements[this.arrayOfElements.length / 2] +
+            this.arrayOfElements[this.arrayOfElements.length / 2 - 1]) / 2
+        } else {
+
+            return this.arrayOfElements[Math.floor(this.arrayOfElements.length / 2)];
+        }
+
+    }
+}
+
+/**
+ * Your MedianFinder object will be instantiated and called as such:
+ * var obj = new MedianFinder()
+ * obj.addNum(num)
+ * var param_2 = obj.findMedian()
+ */
